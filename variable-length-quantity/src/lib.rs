@@ -4,13 +4,15 @@ pub enum Error {
     Overflow,
 }
 
+const CHUNK_SIZE: usize = 7;
+
 /// Convert a list of numbers to a stream of bytes encoded with variable length encoding.
 pub fn to_bytes(values: &[u32]) -> Vec<u8> {
-    for value in values.iter() {
-        println!("{} {:b}", value, value);
+    println!("{:?}", values);
+    for value in values {
+        println!("{}",)
     }
-
-    todo!()
+    todo!();
 }
 
 /// Given a stream of bytes, extract all numbers which are encoded in there.
